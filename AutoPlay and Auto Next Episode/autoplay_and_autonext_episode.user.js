@@ -26,6 +26,7 @@
         childList: true,
         subtree: true
     }
+
     var observer = new MutationObserver(function (mutations) {
         mutations.forEach(function (mutation) {
             disableAutoplay(mutation);
@@ -59,6 +60,7 @@ $(document).ready(function () {
 
     if (window.location.host == "kissanime.ru") {
 
+        /* Thanks for lolamtisch for the idea of the checkboxes */
         if (AutPlay) {
             box1 = 'checked';
         } else {
