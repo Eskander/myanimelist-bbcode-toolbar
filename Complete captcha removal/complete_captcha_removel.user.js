@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         [KissAnime] Complete captcha removal
-// @namespace    https://greasyfork.org/users/152412
+// @namespace    https://github.com/Skqnder
 // @version      0.2
 // @description  Always use Rapidvideo and never encounter captchas again.
 // @author       Skqnder
@@ -12,9 +12,9 @@
 // @grant        none
 // ==/UserScript==
 
+'use strict';
 
 (function() {
-    'use strict';
     //search and destroy
     var link = document.getElementsByTagName('a');
     for (var i = 0; i < link.length; i++) {
@@ -30,7 +30,7 @@
         }
     }
     //Just in case..
-    if (/SKIP THIS/i.test (document.body.innerHTML)){
+    if (/SKIP THIS \(RapidVideo\)/i.test(document.body.innerHTML)){
         document.querySelector('form#formVerify .specialButton').click();
         document.getElementById("formVerify").style.visibility = "hidden";
     }
