@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         [KissAnime] AutoPlay & Auto Next Episode
-// @namespace    https://greasyfork.org/users/152412
+// @namespace    https://github.com/Skqnder
 // @version      0.14
 // @description  AutoPlay & Automatically move to the next episode. (all servers)
 // @author       Skqnder
