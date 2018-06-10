@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         [KissAnime] Strech videos to fill the screen
-// @namespace    https://greasyfork.org/users/152412
-// @version      0.11
+// @namespace    https://github.com/Skqnder
+// @version      0.12
 // @description  Watch old anime in full screen 16:9 aspect ratio. (all servers)
 // @author       Skqnder
 // @license 	 MIT
@@ -14,6 +14,8 @@
 // @compatible   opera Tested with Tampermonkey Beta
 // @grant        none
 // ==/UserScript==
+
+'use strict';
 
 document.addEventListener('webkitfullscreenchange', function(e) {
     check();
