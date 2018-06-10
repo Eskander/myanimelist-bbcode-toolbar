@@ -53,7 +53,6 @@ $(document).ready(function () {
     var AutPlay = GM_getValue('AutPlay', true);
     var NxtPlay = GM_getValue('NxtPlay', true);
     GM_setValue('EpEnded', false);
-    var timer = null;
     var box1 = '';
     var box2 = '';
     //console.log("[Kiss]", window.location.host, "is ready");
