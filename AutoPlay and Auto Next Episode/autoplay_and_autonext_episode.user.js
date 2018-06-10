@@ -1,9 +1,8 @@
-
 // ==UserScript==
-// @name         [KissAnime] Auto Next Episode & AutoPlay
+// @name         [KissAnime] AutoPlay & Auto Next Episode
 // @namespace    https://greasyfork.org/en/users/152412
-// @version      0.8
-// @description  Automatically move to the next episode & AutoPlay.
+// @version      0.9
+// @description  AutoPlay & Automatically move to the next episode (all servers).
 // @author       Skqnder
 // @license 	 MIT
 // @match        *://kissanime.ru/Anime/*/*
@@ -17,10 +16,34 @@
 // @compatible   opera Tested with Tampermonkey Beta
 // @grant        GM_getValue
 // @grant        GM_setValue
-// @grant        GM_addValueChangeListener
 // ==/UserScript==
 
+(function() {
+
+    'use strict';
+
+    var observer = new MutationObserver(function(mutations) {
+        mutations.forEach(function(mutation) {
+            var nodes = mutation.addedNodes;
+            for (var i = 0; i < nodes.length; i++) {
+                if (nodes[i].nodeName == "VIDEO") {
+                    nodes[i].setAttribute('preload', 'none');
+                    nodes[i].removeAttribute('autoplay');
+                }
+            }
+        });
+    });
+
+    observer.observe(document.documentElement, {
+        childList: true,
+        subtree: true
+    });
+
+})();
+
 $(document).ready(function () {
+
+    'use strict';
 
     var NxtPlay = GM_getValue('NxtPlay', 1);
     var AutPlay = GM_getValue('AutPlay', 1);
@@ -76,7 +99,13 @@ $(document).ready(function () {
         GM_setValue('EpEnded', 1);
     });
 
-    GM_addValueChangeListener('EpEnded', Nxt);
+    setInterval(function(){
+        var EpEnded = GM_getValue('EpEnded', 0);
+        if( EpEnded === 1 ) {
+            Nxt();
+            GM_setValue('EpEnded', 0);
+        }
+    }, 1000); /* interval of video state check. */
 
     function Nxt() {
         if (NxtPlay === 1) {
