@@ -1,7 +1,7 @@
 # Advanced BBCode Editor
 Adds a shiny toolbar on top of all text areas in MyAnimeList that support BBCode. (Forum, Messages, Profile comments..). Made using **SCEditor**.
 
-![screenshot](screenshot.png)
+![screenshot][3]
 
 ### Features:
   * Easy text formatting.
@@ -20,3 +20,4 @@ Feel free to [send Feedback][1] or suggest any improvements and also check [my o
 
   [1]: https://greasyfork.org/scripts/370335/feedback
   [2]: https://greasyfork.org/users/152412
+  [3]: https://github.com/Skqnder/userscripts-collection/raw/master/MyAnimeList%20Advanced%20BBCode%20Editor/screenshot.png
