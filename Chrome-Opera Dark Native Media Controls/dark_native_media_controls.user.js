@@ -1,8 +1,8 @@
 // ==UserScript==
-// @name         [Chrome][Opera] Dark HTML5 Video Controls
-// @namespace    https://greasyfork.org/users/152412
-// @version      0.5
-// @description  Fix the ugly white controls in default Chrome & Opera HTML5 Video Player.
+// @name         [Chrome/Opera] Dark Native Media Controls
+// @namespace    https://github.com/Skqnder
+// @version      0.7
+// @description  Fix the ugly white controls in native Chrome & Opera HTML5 Media Player. (pre-Chrome 67 Controls)
 // @author       Skqnder
 // @license 	 MIT
 // @include      *
@@ -12,10 +12,12 @@
 // @grant        none
 // ==/UserScript==
 
+'use strict';
+
 (function() {
-    'use strict';
-    // I don't really know why I was using jQuery for a couple of lines of code. Talk about bad habits..
-    var controls = "video::-webkit-media-controls { filter: brightness(0.9) invert(1) grayscale(1) !important; opacity: 0.8 !important; }";
+    var transparency = 0.8 ;//Set this value between 0 and 1 to edit controls bar transparency.
+
+    var controls = "video::-webkit-media-controls { filter: invert(1) grayscale(1) !important; opacity: "+transparency+" !important; }";
     var style = document.createElement('style');
     style.setAttribute('type','text/css');
     style.appendChild(document.createTextNode(controls));
