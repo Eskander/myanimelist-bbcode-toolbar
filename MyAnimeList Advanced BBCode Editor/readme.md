@@ -15,5 +15,5 @@ Adds a shiny toolbar on top of all text areas in MyAnimeList that support BBCode
   
 Feel free to [send Feedback][1] or suggest any improvements and also check [my other scripts][2].
 
-  [1]: https://greasyfork.org/scripts/33126/feedback
+  [1]: https://greasyfork.org/scripts/370335/feedback
   [2]: https://greasyfork.org/users/152412
