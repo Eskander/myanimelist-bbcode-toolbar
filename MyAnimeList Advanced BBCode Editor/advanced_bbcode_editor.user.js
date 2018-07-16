@@ -96,7 +96,6 @@
     for (var i = 0; i < $('.textarea').length; i++) {
         var textarea = $('.textarea')[i];
         sceditor.create(textarea, {
-            id: 'sce1',
             format: 'bbcode',
             icons: 'monocons',
             dateFormat: 'month day, year',
