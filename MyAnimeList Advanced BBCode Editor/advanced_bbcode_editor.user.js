@@ -14,6 +14,9 @@
 // @require      https://cdnjs.cloudflare.com/ajax/libs/sceditor/2.1.3/plugins/autoyoutube.js
 // @require      https://cdnjs.cloudflare.com/ajax/libs/sceditor/2.1.3/plugins/plaintext.js
 // @require      https://cdnjs.cloudflare.com/ajax/libs/sceditor/2.1.3/plugins/undo.js
+// @compatible   firefox Tested with Tampermonkey
+// @compatible   chrome Tested with Tampermonkey
+// @compatible   opera Tested with Tampermonkey Beta
 // @grant        none
 // ==/UserScript==
 
