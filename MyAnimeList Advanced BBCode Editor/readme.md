@@ -1,6 +1,5 @@
 # Advanced BBCode Editor
-Adds a shiny toolbar on top of all text areas in MyAnimeList that support BBCode. (Forum, Messages, Profile comments..)
-Powered by **SCEditor**.
+Adds a shiny toolbar on top of all text areas in MyAnimeList that support BBCode. (Forum, Messages, Profile comments..). Made using **SCEditor**.
 
 ### Features:
   * Easy text formatting.
