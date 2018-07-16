@@ -24,8 +24,6 @@
 
 (function() {
 
-    //$("head").append ('<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/sceditor/2.1.3/themes/default.min.css" >');
-    //$("head").append ('<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/sceditor/2.1.3/themes/defaultdark.min.css" >');
     $("head").append ('<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/sceditor/2.1.3/themes/square.min.css" >');
 
     sceditor.command.set('date', {
@@ -104,7 +102,8 @@
             dateFormat: 'month day, year',
             style: '//cdnjs.cloudflare.com/ajax/libs/sceditor/2.1.3/themes/content/default.min.css',
             plugins: 'autosave,autoyoutube,plaintext,undo',
-            toolbar: 'source|bold,italic,underline,strike|center,right|size,color,removeformat|bulletlist,orderedlist|code,quote,image,youtube|link,unlink|date,time|print,maximize',
+            toolbar: 'source|bold,italic,underline,strike|center,right|color,removeformat|code,quote,image,youtube|link,unlink|date,time|print,maximize',
+            //toolbar: 'source|bold,italic,underline,strike|left,center,right|size,color,removeformat|bulletlist,orderedlist|code,quote,image,youtube|link,unlink|date,time|print,maximize',
             emoticonsEnabled: false,
             autoExpand: true,
             enablePasteFiltering: true,
