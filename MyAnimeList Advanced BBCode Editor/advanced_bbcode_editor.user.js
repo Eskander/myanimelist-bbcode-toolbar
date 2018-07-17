@@ -1,11 +1,28 @@
 // ==UserScript==
 // @name         [MyAnimeList] Advanced BBCode Editor
 // @namespace    https://github.com/Skqnder
-// @version      0.1
+// @version      0.2
 // @description  Advanced BBCode Editor for MyAnimeList.net
 // @author       Skqnder
 // @license 	 MIT
-// @match        *://myanimelist.net/*
+
+// @include      *://myanimelist.net/forum*
+// @include      *://myanimelist.net/mymessages*
+// @include      *://myanimelist.net/editprofile*
+// @include      *://myanimelist.net/myblog*
+// @include      *://myanimelist.net/clubs*
+// @include      *://myanimelist.net/profile*
+// @include      *://myanimelist.net/editprofile
+// @include      *://myanimelist.net/comtocom*
+// @include      *://myanimelist.net/comments*
+// @include      *://myanimelist.net/editlist*
+// @include      *://myanimelist.net/panel*
+// @include      *://myanimelist.net/people*
+// @include      *://myanimelist.net/myfriends*
+// @include      *://myanimelist.net/blog*
+
+// @exclude      *://myanimelist.net/editprofile.php?go=stylepref&do=cssadv&id=*
+
 // @require      https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js
 // @require      https://cdnjs.cloudflare.com/ajax/libs/sceditor/2.1.3/sceditor.min.js
 // @require      https://cdnjs.cloudflare.com/ajax/libs/sceditor/2.1.3/icons/monocons.js
@@ -14,6 +31,7 @@
 // @require      https://cdnjs.cloudflare.com/ajax/libs/sceditor/2.1.3/plugins/autoyoutube.js
 // @require      https://cdnjs.cloudflare.com/ajax/libs/sceditor/2.1.3/plugins/plaintext.js
 // @require      https://cdnjs.cloudflare.com/ajax/libs/sceditor/2.1.3/plugins/undo.js
+
 // @compatible   firefox Tested with Tampermonkey
 // @compatible   chrome Tested with Tampermonkey
 // @compatible   opera Tested with Tampermonkey Beta
