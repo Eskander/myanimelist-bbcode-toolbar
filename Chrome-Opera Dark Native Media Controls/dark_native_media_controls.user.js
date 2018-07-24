@@ -6,6 +6,7 @@
 // @author       Skqnder
 // @license 	 MIT
 // @include      *
+// @icon         https://www.google.com/s2/favicons?domain=google.com/chrome
 // @run-at       document-start
 // @compatible   chrome Tested with Tampermonkey
 // @compatible   opera Tested with Tampermonkey Beta
