@@ -6,6 +6,7 @@
 // @author       Skqnder
 // @license 	 MIT
 // @match        *://kissanime.ru/*
+// @icon         https://www.google.com/s2/favicons?domain=kissanime.ru
 // @compatible   firefox Tested with Tampermonkey
 // @compatible   chrome Tested with Tampermonkey
 // @compatible   opera Tested with Tampermonkey Beta
