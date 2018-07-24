@@ -20,7 +20,6 @@
 // @include      *://myanimelist.net/people*
 // @include      *://myanimelist.net/myfriends*
 // @include      *://myanimelist.net/blog*
-
 // @exclude      *://myanimelist.net/editprofile.php?go=stylepref&do=cssadv&id=*
 
 // @require      https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js
@@ -32,6 +31,7 @@
 // @require      https://cdnjs.cloudflare.com/ajax/libs/sceditor/2.1.3/plugins/plaintext.js
 // @require      https://cdnjs.cloudflare.com/ajax/libs/sceditor/2.1.3/plugins/undo.js
 
+// @icon         https://www.google.com/s2/favicons?domain=myanimelist.net
 // @compatible   firefox Tested with Tampermonkey
 // @compatible   chrome Tested with Tampermonkey
 // @compatible   opera Tested with Tampermonkey Beta
