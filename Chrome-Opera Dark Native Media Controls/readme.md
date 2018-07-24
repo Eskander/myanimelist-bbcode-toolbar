@@ -8,7 +8,7 @@ Feel free to [send Feedback][1] or suggest any improvements and also check [my o
 [This is an example of a HTML5 Video Player to test the changes yourself.][3]
 
 _______________________________________________________________
-<h3>Update: May 29, 2018</h3>
+### Update: May 29, 2018
 
 As of **Chrome 67**, the design for Native Media Controls has changed. To enable the old style head over to: `chrome://flags/#enable-modern-media-controls` and set **New Media Controls** to **Disabled**
 
