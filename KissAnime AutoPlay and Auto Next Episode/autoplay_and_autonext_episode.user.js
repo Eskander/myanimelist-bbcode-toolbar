@@ -9,6 +9,7 @@
 // @match        *://openload.co/embed/*/*
 // @match        *://www.rapidvideo.com/e/*
 // @match        *://streamango.com/embed/*/*
+// @icon         https://www.google.com/s2/favicons?domain=kissanime.ru
 // @require      https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js
 // @run-at       document-start
 // @compatible   firefox Tested with Tampermonkey
