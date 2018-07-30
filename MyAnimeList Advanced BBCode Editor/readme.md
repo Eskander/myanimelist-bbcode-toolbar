@@ -4,9 +4,10 @@ Adds a shiny toolbar on top of all text areas in MyAnimeList that support BBCode
 ![screenshot][3]
 
 ### Features:
-  * Easy text formatting.
+  * Fast text formatting.
   * Live preview.
   * Easy images/videos insertion.
+  * Keyboard shortcuts (The reason I made this in the first place).
   * ..
 
 #### TODO:
