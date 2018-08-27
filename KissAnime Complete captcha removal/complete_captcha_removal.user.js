@@ -3,7 +3,7 @@
 // @namespace    https://github.com/Skqnder
 // @version      0.2
 // @description  Always use Rapidvideo and never encounter captchas again.
-// @author       Skqnder
+// @author       Eskander
 // @license 	 MIT
 // @match        *://kissanime.ru/*
 // @icon         https://www.google.com/s2/favicons?domain=kissanime.ru
