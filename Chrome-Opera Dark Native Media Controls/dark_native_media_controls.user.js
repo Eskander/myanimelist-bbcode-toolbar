@@ -3,7 +3,7 @@
 // @namespace    https://github.com/Skqnder
 // @version      0.7
 // @description  Fix the ugly white controls in native Chrome & Opera HTML5 Media Player. (pre-Chrome 67 Controls)
-// @author       Skqnder
+// @author       Eskander
 // @license 	 MIT
 // @include      *
 // @icon         https://www.google.com/s2/favicons?domain=google.com/chrome
