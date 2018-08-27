@@ -3,7 +3,7 @@
 // @namespace    https://github.com/Skqnder
 // @version      0.2
 // @description  Advanced BBCode Editor for MyAnimeList.net
-// @author       Skqnder
+// @author       Eskander
 // @license 	 MIT
 
 // @include      *://myanimelist.net/forum*
