@@ -3,7 +3,7 @@
 // @namespace    https://github.com/Skqnder
 // @version      0.12
 // @description  Watch old anime in full screen 16:9 aspect ratio. (all servers)
-// @author       Skqnder
+// @author       Eskander
 // @license 	 MIT
 // @match        *://kissanime.ru/Anime/*/*
 // @match        *://openload.co/embed/*/*
