@@ -3,7 +3,7 @@
 // @namespace    https://github.com/Skqnder
 // @version      0.14
 // @description  AutoPlay & Automatically move to the next episode. (all servers)
-// @author       Skqnder
+// @author       Eskander
 // @license 	 MIT
 // @match        *://kissanime.ru/Anime/*/*
 // @match        *://openload.co/embed/*/*
