@@ -1,4 +1,4 @@
-# Advanced BBCode Editor ![HitCount][hc]
+# Advanced BBCode Editor
 Adds a shiny toolbar on top of all text areas in MyAnimeList that support BBCode. (Forum, Messages, Profile comments..). Made using **SCEditor**.
 
 ![screenshot][1]
@@ -22,7 +22,6 @@ Adds a shiny toolbar on top of all text areas in MyAnimeList that support BBCode
 
   [1]: https://github.com/Skqnder/userscripts-collection/raw/master/MyAnimeList%20Advanced%20BBCode%20Editor/screenshot.png
 
-  [hc]: http://hits.dwyl.io/skqnder/userscripts-collection/tree/master/MyAnimeList%20Advanced%20BBCode%20Editor.svg
   [b1]: https://img.shields.io/badge/Install-GreasyFork-red.svg?longCache=true&style=for-the-badge&
   [b2]: https://img.shields.io/badge/Install-OpenUserJS-blue.svg?longCache=true&style=for-the-badge
   [b3]: https://img.shields.io/badge/Install-GitHub-lightgrey.svg?longCache=true&style=for-the-badge
