@@ -1,9 +1,7 @@
-# Dark Native Media Controls
+# Dark Native Media Controls ![HitCount][hc]
 If you too hate the white controls in the default Google Chrome & Opera HTML5 Video Player then you're in the right place. This script makes the controls bar dark with little transparency like how it should have been.
 
 **It doesn't make sense to install this script in browsers other than chromium-based ones.**
-
-Feel free to [send Feedback][1] or suggest any improvements and also check [my other scripts][2].
 
 [This is an example of a HTML5 Video Player to test the changes yourself.][3]
 
@@ -19,7 +17,8 @@ As of **Chrome 67**, the design for Native Media Controls has changed. To enable
   [1]: https://greasyfork.org/scripts/37278/feedback
   [2]: https://greasyfork.org/users/152412
   [3]: https://www.w3schools.com/html/html5_video.asp
-  
+
+  [hc]: http://hits.dwyl.io/skqnder/userscripts-collection/tree/master/Chrome-Opera%20Dark%20Native%20Media%20Controls.svg
   [b1]: https://img.shields.io/badge/Install-GreasyFork-red.svg?longCache=true&style=for-the-badge&
   [b2]: https://img.shields.io/badge/Install-OpenUserJS-blue.svg?longCache=true&style=for-the-badge
   [b3]: https://img.shields.io/badge/Install-GitHub-lightgrey.svg?longCache=true&style=for-the-badge
