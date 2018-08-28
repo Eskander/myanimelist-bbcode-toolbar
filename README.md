@@ -1,4 +1,4 @@
-# Skqnder's userscripts collection
+# some handy userscripts
 
 This is a repository where I host all the scripts I publish on [GreasyFork.org][1] and [OpenUserJS.org][2].
 Contributions and issue reports are welcome.
