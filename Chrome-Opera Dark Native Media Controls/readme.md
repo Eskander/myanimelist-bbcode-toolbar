@@ -13,9 +13,7 @@ _______________________________________________________________
 
 As of **Chrome 67**, the design for Native Media Controls has changed. To enable the old style head over to: `chrome://flags/#enable-modern-media-controls` and set **New Media Controls** to **Disabled**
 
-_______________________________________________________________
-
-[![GreasyFork][b1]][l1] [![OpenUserJS][b2]][l2] [![GitHub][b3]][l3]
+# [![GreasyFork][b1]][l1] [![OpenUserJS][b2]][l2] [![GitHub][b3]][l3]
 
 
   [1]: https://greasyfork.org/scripts/37278/feedback
