@@ -5,12 +5,12 @@ Watch old anime released in 4:3 aspect ratio on your 16:9 widescreen without the
 
 <table>
   <tr>
-    <th><img src="https://raw.githubusercontent.com/skqnder/userscripts-collection/master/KissAnime%20Stretch%20videos%20in%20fullscreen/before.png" width="440px"></th>
-    <th><img src="https://raw.githubusercontent.com/skqnder/userscripts-collection/master/KissAnime%20Stretch%20videos%20in%20fullscreen/after.png" width="440px"></th>
+    <th><img src="https://raw.githubusercontent.com/skqnder/userscripts-collection/master/KissAnime%20Stretch%20videos%20in%20fullscreen/before.png"></th>
+    <th><img src="https://raw.githubusercontent.com/skqnder/userscripts-collection/master/KissAnime%20Stretch%20videos%20in%20fullscreen/after.png"></th>
   </tr>
   <tr>
     <td>A normal 4:3 aspect ratio anime</td>
-    <td>After using this script</td>
+    <td>Video fills the screen after using this script</td>
   </tr>
 </table>
 
