@@ -1,12 +1,22 @@
-# Stretch videos in fullscreen ![HitCount][hc]
+# Stretch videos in fullscreen
 Watch old anime released in 4:3 aspect ratio on your 16:9 widescreen without the black areas on the video sides. This script is mostly needed when connecting your computer to the TV.
 
 **Note: Works on all servers.**
 
+<table>
+  <tr>
+    <th><img src="https://raw.githubusercontent.com/skqnder/userscripts-collection/master/KissAnime%20Stretch%20videos%20in%20fullscreen/before.png" width="440px"></th>
+    <th><img src="https://raw.githubusercontent.com/skqnder/userscripts-collection/master/KissAnime%20Stretch%20videos%20in%20fullscreen/after.png" width="440px"></th>
+  </tr>
+  <tr>
+    <td>A normal 4:3 aspect ratio anime</td>
+    <td>After using this script</td>
+  </tr>
+</table>
+
 # [![GreasyFork][b1]][l1] [![OpenUserJS][b2]][l2] [![GitHub][b3]][l3]
 
 
-  [hc]: http://hits.dwyl.io/skqnder/userscripts-collection/tree/master/KissAnime%20Stretch%20videos%20in%20fullscreen.svg
   [b1]: https://img.shields.io/badge/Install-GreasyFork-red.svg?longCache=true&style=for-the-badge&
   [b2]: https://img.shields.io/badge/Install-OpenUserJS-blue.svg?longCache=true&style=for-the-badge
   [b3]: https://img.shields.io/badge/Install-GitHub-lightgrey.svg?longCache=true&style=for-the-badge
