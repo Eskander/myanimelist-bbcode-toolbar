@@ -5,8 +5,8 @@ If you too hate the white controls in the default Google Chrome & Opera HTML5 Vi
 
 <table>
   <tr>
-    <th><img src="https://raw.githubusercontent.com/skqnder/userscripts-collection/master/Chrome-Opera%20Dark%20Native%20Media%20Controls/before.jpg" width="440px"></th>
-    <th><img src="https://raw.githubusercontent.com/skqnder/userscripts-collection/master/Chrome-Opera%20Dark%20Native%20Media%20Controls/after.jpg" width="440px"></th>
+    <th><img src="https://raw.githubusercontent.com/skqnder/userscripts-collection/master/Chrome-Opera%20Dark%20Native%20Media%20Controls/before.jpg"></th>
+    <th><img src="https://raw.githubusercontent.com/skqnder/userscripts-collection/master/Chrome-Opera%20Dark%20Native%20Media%20Controls/after.jpg"></th>
   </tr>
   <tr>
     <td>Default HTML5 Video Player in pre-Chrome 67</td>
