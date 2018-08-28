@@ -1,7 +1,7 @@
-# Advanced BBCode Editor
+# Advanced BBCode Editor ![HitCount][hc]
 Adds a shiny toolbar on top of all text areas in MyAnimeList that support BBCode. (Forum, Messages, Profile comments..). Made using **SCEditor**.
 
-![screenshot][3]
+![screenshot][1]
 
 ### Features:
   * Fast text formatting.
@@ -16,16 +16,13 @@ Adds a shiny toolbar on top of all text areas in MyAnimeList that support BBCode
   * Add **Bullet list** and **Ordered list** buttons.
   * Remove **Width** and **Height** from **Insert an image** dropdown.
   * Add **Spoiler tag** button.
-  
-Feel free to [send Feedback][1] or suggest any improvements and also check [my other scripts][2].
 
 # [![GreasyFork][b1]][l1] [![OpenUserJS][b2]][l2] [![GitHub][b3]][l3]
 
 
-  [1]: https://greasyfork.org/scripts/370335/feedback
-  [2]: https://greasyfork.org/users/152412
-  [3]: https://github.com/Skqnder/userscripts-collection/raw/master/MyAnimeList%20Advanced%20BBCode%20Editor/screenshot.png
-  
+  [1]: https://github.com/Skqnder/userscripts-collection/raw/master/MyAnimeList%20Advanced%20BBCode%20Editor/screenshot.png
+
+  [hc]: http://hits.dwyl.io/skqnder/userscripts-collection/tree/master/MyAnimeList%20Advanced%20BBCode%20Editor.svg
   [b1]: https://img.shields.io/badge/Install-GreasyFork-red.svg?longCache=true&style=for-the-badge&
   [b2]: https://img.shields.io/badge/Install-OpenUserJS-blue.svg?longCache=true&style=for-the-badge
   [b3]: https://img.shields.io/badge/Install-GitHub-lightgrey.svg?longCache=true&style=for-the-badge
