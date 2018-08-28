@@ -1,12 +1,11 @@
 // ==UserScript==
 // @name         [MyAnimeList] Advanced BBCode Editor
-// @namespace    https://github.com/Skqnder
-// @version      0.2
+// @namespace    https://github.com/skqnder
+// @version      0.3-alpha
 // @description  Advanced BBCode Editor for MyAnimeList.net
-// @author       Eskander
-// @license 	 MIT
+// @author       eskander
+// @license      MIT
 
-// @include      *://myanimelist.net/forum*
 // @include      *://myanimelist.net/mymessages*
 // @include      *://myanimelist.net/editprofile*
 // @include      *://myanimelist.net/myblog*
@@ -20,6 +19,8 @@
 // @include      *://myanimelist.net/people*
 // @include      *://myanimelist.net/myfriends*
 // @include      *://myanimelist.net/blog*
+
+// @exclude      *://myanimelist.net/forum*
 // @exclude      *://myanimelist.net/editprofile.php?go=stylepref&do=cssadv&id=*
 
 // @require      https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js
@@ -32,6 +33,8 @@
 // @require      https://cdnjs.cloudflare.com/ajax/libs/sceditor/2.1.3/plugins/undo.js
 
 // @icon         https://www.google.com/s2/favicons?domain=myanimelist.net
+// @homepage     https://github.com/skqnder/userscripts-collection
+// @supportURL   https://github.com/skqnder/userscripts-collection/issues
 // @compatible   firefox Tested with Tampermonkey
 // @compatible   chrome Tested with Tampermonkey
 // @compatible   opera Tested with Tampermonkey Beta
