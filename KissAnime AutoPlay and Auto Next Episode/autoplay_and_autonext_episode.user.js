@@ -1,15 +1,17 @@
 // ==UserScript==
 // @name         [KissAnime] AutoPlay & Auto Next Episode
-// @namespace    https://github.com/Skqnder
-// @version      0.14
+// @namespace    https://github.com/skqnder
+// @version      0.15
 // @description  AutoPlay & Automatically move to the next episode. (all servers)
-// @author       Eskander
-// @license 	 MIT
+// @author       eskander
+// @license      MIT
 // @match        *://kissanime.ru/Anime/*/*
 // @match        *://openload.co/embed/*/*
 // @match        *://www.rapidvideo.com/e/*
 // @match        *://streamango.com/embed/*/*
 // @icon         https://www.google.com/s2/favicons?domain=kissanime.ru
+// @homepage     https://github.com/skqnder/userscripts-collection
+// @supportURL   https://github.com/skqnder/userscripts-collection/issues
 // @require      https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js
 // @run-at       document-start
 // @compatible   firefox Tested with Tampermonkey
