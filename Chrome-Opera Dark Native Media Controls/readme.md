@@ -3,7 +3,7 @@ If you too hate the white controls in the default Google Chrome & Opera HTML5 Vi
 
 **It doesn't make sense to install this script in browsers other than chromium-based ones.**
 
-[This is an example of a HTML5 Video Player to test the changes yourself.][3]
+[This is an example of a HTML5 Video Player to test the changes yourself.][1]
 
 _______________________________________________________________
 
@@ -14,9 +14,7 @@ As of **Chrome 67**, the design for Native Media Controls has changed. To enable
 # [![GreasyFork][b1]][l1] [![OpenUserJS][b2]][l2] [![GitHub][b3]][l3]
 
 
-  [1]: https://greasyfork.org/scripts/37278/feedback
-  [2]: https://greasyfork.org/users/152412
-  [3]: https://www.w3schools.com/html/html5_video.asp
+  [1]: https://www.w3schools.com/html/html5_video.asp
 
   [hc]: http://hits.dwyl.io/skqnder/userscripts-collection/tree/master/Chrome-Opera%20Dark%20Native%20Media%20Controls.svg
   [b1]: https://img.shields.io/badge/Install-GreasyFork-red.svg?longCache=true&style=for-the-badge&
