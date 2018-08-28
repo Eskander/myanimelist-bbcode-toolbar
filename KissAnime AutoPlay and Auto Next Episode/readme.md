@@ -1,4 +1,4 @@
-# AutoPlay & Auto Next Episode ![HitCount][hc]
+# AutoPlay & Auto Next Episode
 This script tries to improve your experience in Kissanime by automating simple tasks.
 You can choose (☑) to AutoPlay episodes automatically and/or move to the next episode at the end of the current one. *(Assuming you already blocked the ads covering the players.)*
 
@@ -11,7 +11,6 @@ You can choose (☑) to AutoPlay episodes automatically and/or move to the next 
 
   [1]: https://greasyfork.org/scripts/369048
   
-  [hc]: http://hits.dwyl.io/skqnder/userscripts-collection/tree/master/KissAnime%20AutoPlay%20and%20Auto%20Next%20Episode.svg
   [b1]: https://img.shields.io/badge/Install-GreasyFork-red.svg?longCache=true&style=for-the-badge&
   [b2]: https://img.shields.io/badge/Install-OpenUserJS-blue.svg?longCache=true&style=for-the-badge
   [b3]: https://img.shields.io/badge/Install-GitHub-lightgrey.svg?longCache=true&style=for-the-badge
