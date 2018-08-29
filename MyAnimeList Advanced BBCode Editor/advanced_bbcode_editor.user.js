@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         [MyAnimeList] Advanced BBCode Editor
 // @namespace    https://github.com/skqnder
-// @version      0.3-alpha
+// @version      0.4-alpha
 // @description  Advanced BBCode Editor for MyAnimeList.net
 // @author       eskander
 // @license      MIT
