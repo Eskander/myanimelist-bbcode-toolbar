@@ -13,7 +13,7 @@ Adds a shiny toolbar on top of all text areas in MyAnimeList that support BBCode
 #### TODO:
   * Add **Align left** button.
   * Add **Text size** button.
-  * ~~Add **Bullet list** and **Ordered list** buttons.~~ Done.
+  * <del>Add **Bullet list** and **Ordered list** buttons.</del> Done.
   * Remove **Width** and **Height** from **Insert an image** dropdown.
   * Add **Spoiler tag** button.
 
