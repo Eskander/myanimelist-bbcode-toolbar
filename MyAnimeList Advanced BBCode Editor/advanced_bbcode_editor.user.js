@@ -31,6 +31,7 @@
 // @require      https://cdnjs.cloudflare.com/ajax/libs/sceditor/2.1.3/plugins/autoyoutube.js
 // @require      https://cdnjs.cloudflare.com/ajax/libs/sceditor/2.1.3/plugins/plaintext.js
 // @require      https://cdnjs.cloudflare.com/ajax/libs/sceditor/2.1.3/plugins/undo.js
+// @require      https://cdn.rawgit.com/skqnder/userscripts-collection/eab22971ff8dc64d19727b083751f2bc9df71b54/MyAnimeList%20Advanced%20BBCode%20Editor/plugins/alternative-lists.js
 
 // @icon         https://www.google.com/s2/favicons?domain=myanimelist.net
 // @homepage     https://github.com/skqnder/userscripts-collection
@@ -121,8 +122,8 @@
             icons: 'monocons',
             dateFormat: 'month day, year',
             style: '//cdnjs.cloudflare.com/ajax/libs/sceditor/2.1.3/themes/content/default.min.css',
-            plugins: 'autosave,autoyoutube,plaintext,undo',
-            toolbar: 'source|bold,italic,underline,strike|center,right|color,removeformat|code,quote,image,youtube|link,unlink|date,time|print,maximize',
+            plugins: 'autosave,autoyoutube,plaintext,undo,alternative-lists',
+            toolbar: 'source|bold,italic,underline,strike|center,right|color,removeformat|bulletlist,orderedlist|code,quote,image,youtube|link,unlink|date,time|print,maximize',
             //toolbar: 'source|bold,italic,underline,strike|left,center,right|size,color,removeformat|bulletlist,orderedlist|code,quote,image,youtube|link,unlink|date,time|print,maximize',
             emoticonsEnabled: false,
             autoExpand: true,
