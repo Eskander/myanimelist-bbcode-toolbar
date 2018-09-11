@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         [MyAnimeList] Advanced BBCode Editor
 // @namespace    https://github.com/skqnder
-// @version      0.4-alpha
+// @version      0.4.1-alpha
 // @description  Advanced BBCode Editor for MyAnimeList.net
 // @author       eskander
 // @license      MIT
@@ -123,8 +123,8 @@
             dateFormat: 'month day, year',
             style: '//cdnjs.cloudflare.com/ajax/libs/sceditor/2.1.3/themes/content/default.min.css',
             plugins: 'autosave,autoyoutube,plaintext,undo,alternative-lists',
-            toolbar: 'source|bold,italic,underline,strike|center,right|color,removeformat|bulletlist,orderedlist|code,quote,image,youtube|link,unlink|date,time|print,maximize',
-            //toolbar: 'source|bold,italic,underline,strike|left,center,right|size,color,removeformat|bulletlist,orderedlist|code,quote,image,youtube|link,unlink|date,time|print,maximize',
+            toolbar: 'source|bold,italic,underline,strike|center,right|color,removeformat|bulletlist,orderedlist|code,quote,image,youtube|link,unlink|date,time|maximize',
+            //toolbar: 'source|bold,italic,underline,strike|left,center,right|size,color,removeformat|bulletlist,orderedlist|code,quote,image,youtube|link,unlink|date,time|maximize',
             emoticonsEnabled: false,
             autoExpand: true,
             enablePasteFiltering: true,
