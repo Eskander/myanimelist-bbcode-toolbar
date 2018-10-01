@@ -5,8 +5,8 @@ Watch old anime released in 4:3 aspect ratio on your 16:9 widescreen without the
 
 <table>
   <tr>
-    <th><img src="https://raw.githubusercontent.com/skqnder/userscripts-collection/master/KissAnime%20Stretch%20videos%20in%20fullscreen/before.png"></th>
-    <th><img src="https://raw.githubusercontent.com/skqnder/userscripts-collection/master/KissAnime%20Stretch%20videos%20in%20fullscreen/after.png"></th>
+    <th><img src="https://raw.githubusercontent.com/eskander/userscripts-collection/master/KissAnime%20Stretch%20videos%20in%20fullscreen/before.png"></th>
+    <th><img src="https://raw.githubusercontent.com/eskander/userscripts-collection/master/KissAnime%20Stretch%20videos%20in%20fullscreen/after.png"></th>
   </tr>
   <tr>
     <td>A normal 4:3 aspect ratio anime</td>
@@ -23,4 +23,4 @@ Watch old anime released in 4:3 aspect ratio on your 16:9 widescreen without the
 
   [l1]: https://greasyfork.org/en/scripts/33126-kissanime-stretch-videos-in-fullscreen
   [l2]: https://openuserjs.org/scripts/eskander/[KissAnime]_Stretch_videos_in_fullscreen
-  [l3]: https://github.com/skqnder/userscripts-collection/raw/master/KissAnime%20Stretch%20videos%20in%20fullscreen/stretch_videos_in_fullscreen.user.js
+  [l3]: https://github.com/eskander/userscripts-collection/raw/master/KissAnime%20Stretch%20videos%20in%20fullscreen/stretch_videos_in_fullscreen.user.js
