@@ -1,14 +1,14 @@
 // ==UserScript==
 // @name         [KissAnime] Complete captcha removal
-// @namespace    https://github.com/skqnder
-// @version      0.3
+// @namespace    https://github.com/eskander
+// @version      0.3.1
 // @description  Always use Rapidvideo and never encounter captchas again.
 // @author       eskander
 // @license      MIT
 // @match        *://kissanime.ru/*
 // @icon         https://www.google.com/s2/favicons?domain=kissanime.ru
-// @homepage     https://github.com/skqnder/userscripts-collection
-// @supportURL   https://github.com/skqnder/userscripts-collection/issues
+// @homepage     https://github.com/eskander/userscripts-collection
+// @supportURL   https://github.com/eskander/userscripts-collection/issues
 // @compatible   firefox Tested with Tampermonkey
 // @compatible   chrome Tested with Tampermonkey
 // @compatible   opera Tested with Tampermonkey Beta
