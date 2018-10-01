@@ -17,4 +17,4 @@ You can choose (☑) to AutoPlay episodes automatically and/or move to the next 
 
   [l1]: https://greasyfork.org/en/scripts/35999-kissanime-autoplay-auto-next-episode
   [l2]: https://openuserjs.org/scripts/eskander/[KissAnime]_AutoPlay_Auto_Next_Episode
-  [l3]: https://github.com/skqnder/userscripts-collection/raw/master/KissAnime%20AutoPlay%20and%20Auto%20Next%20Episode/autoplay_and_autonext_episode.user.js
+  [l3]: https://github.com/eskander/userscripts-collection/raw/master/KissAnime%20AutoPlay%20and%20Auto%20Next%20Episode/autoplay_and_autonext_episode.user.js
