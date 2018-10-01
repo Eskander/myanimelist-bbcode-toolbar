@@ -15,4 +15,4 @@ Check [my other scripts][1], like the one that [autoplays][2] the next episode (
 
   [l1]: https://greasyfork.org/en/scripts/369048-kissanime-complete-captcha-removal
   [l2]: https://openuserjs.org/scripts/eskander/[KissAnime]_Complete_captcha_removal
-  [l3]: https://github.com/skqnder/userscripts-collection/raw/master/KissAnime%20Complete%20captcha%20removal/complete_captcha_removal.user.js
+  [l3]: https://github.com/eskander/userscripts-collection/raw/master/KissAnime%20Complete%20captcha%20removal/complete_captcha_removal.user.js
