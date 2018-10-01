@@ -1,14 +1,14 @@
 // ==UserScript==
 // @name         [Chrome/Opera] Dark Native Media Controls
-// @namespace    https://github.com/skqnder
-// @version      0.8
+// @namespace    https://github.com/eskander
+// @version      0.8.1
 // @description  Fix the ugly white controls in native Chrome & Opera HTML5 Media Player. (pre-Chrome 67 Controls)
 // @author       eskander
 // @license      MIT
 // @include      *
 // @icon         https://www.google.com/s2/favicons?domain=google.com/chrome
-// @homepage     https://github.com/skqnder/userscripts-collection
-// @supportURL   https://github.com/skqnder/userscripts-collection/issues
+// @homepage     https://github.com/eskander/userscripts-collection
+// @supportURL   https://github.com/eskander/userscripts-collection/issues
 // @run-at       document-start
 // @compatible   chrome Tested with Tampermonkey
 // @compatible   opera Tested with Tampermonkey Beta
