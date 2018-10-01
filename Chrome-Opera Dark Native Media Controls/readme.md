@@ -5,8 +5,8 @@ If you too hate the white controls in the default Google Chrome & Opera HTML5 Vi
 
 <table>
   <tr>
-    <th><img src="https://raw.githubusercontent.com/skqnder/userscripts-collection/master/Chrome-Opera%20Dark%20Native%20Media%20Controls/before.jpg"></th>
-    <th><img src="https://raw.githubusercontent.com/skqnder/userscripts-collection/master/Chrome-Opera%20Dark%20Native%20Media%20Controls/after.jpg"></th>
+    <th><img src="https://raw.githubusercontent.com/eskander/userscripts-collection/master/Chrome-Opera%20Dark%20Native%20Media%20Controls/before.jpg"></th>
+    <th><img src="https://raw.githubusercontent.com/eskander/userscripts-collection/master/Chrome-Opera%20Dark%20Native%20Media%20Controls/after.jpg"></th>
   </tr>
   <tr>
     <td>Default HTML5 Video Player in pre-Chrome 67</td>
@@ -33,5 +33,5 @@ As of **Chrome 67**, the design for Native Media Controls has changed. To enable
 
   [l1]: https://greasyfork.org/en/scripts/37278-chrome-opera-dark-native-media-controls
   [l2]: https://openuserjs.org/scripts/eskander/[ChromeOpera]_Dark_Native_Media_Controls
-  [l3]: https://github.com/skqnder/userscripts-collection/raw/master/Chrome-Opera%20Dark%20Native%20Media%20Controls/dark_native_media_controls.user.js
+  [l3]: https://github.com/eskander/userscripts-collection/raw/master/Chrome-Opera%20Dark%20Native%20Media%20Controls/dark_native_media_controls.user.js
   
