@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         [KissAnime] AutoPlay & Auto Next Episode
 // @namespace    https://github.com/eskander
-// @version      0.16
+// @version      0.16.1
 // @description  AutoPlay & Automatically move to the next episode. (all servers)
 // @author       eskander
 // @license      MIT
@@ -42,6 +42,7 @@
             if (nodes[i].nodeName == 'VIDEO') {
                 nodes[i].setAttribute('preload', 'none');
                 nodes[i].removeAttribute('autoplay');
+                nodes[i].muted = true;
                 //console.log('[Kiss] Video killed successfully.');
             }
         }
@@ -133,6 +134,7 @@ $(document).ready(function () {
         if (AutPlay) {
             $('.videoAdClose').remove();
             $('.vjs-big-play-button').click();
+            setTimeout(function(){$("video").prop('muted',false)},300);
         }
 
         $('#my_video_1_html5_api').on('ended', function (e) {
@@ -148,6 +150,7 @@ $(document).ready(function () {
             $('.vjs-poster').remove();
             $('.vjs-text-track-display').remove();
             $('.vjs-big-play-button').click();
+            setTimeout(function(){$("video").prop('muted',false)},300);
         }
 
         $('#videojs_html5_api').on('ended', function (e) {
@@ -159,6 +162,7 @@ $(document).ready(function () {
         if (AutPlay) {
             $('#videooverlay').click();
             $('.vjs-poster').click();
+            setTimeout(function(){$("video").prop('muted',false)},300);
         }
 
         $('#olvideo_html5_api').on('ended', function (e) {
@@ -170,6 +174,7 @@ $(document).ready(function () {
         if (AutPlay) {
             $('#videooverlay').click();
             $('.vjs-big-play-button').click();
+            setTimeout(function(){$("video").prop('muted',false)},300);
         }
 
         $('#mgvideo_html5_api').on('ended', function (e) {
