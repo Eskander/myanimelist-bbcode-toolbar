@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         [KissAnime] AutoPlay & Auto Next Episode
 // @namespace    https://github.com/eskander
-// @version      0.15.1
+// @version      0.16
 // @description  AutoPlay & Automatically move to the next episode. (all servers)
 // @author       eskander
 // @license      MIT
@@ -118,11 +118,11 @@ $(document).ready(function () {
         }
 
         /* Just a stupid hack to please the guys at Google's */
-        if ($("#divContentVideo > iframe").length && AutPlay && typeof InstallTrigger == 'undefined') {
-            $("#divContentVideo > iframe")[0].setAttribute("allow", "autoplay; fullscreen");
+        if ($("#my_video_1").length && AutPlay && typeof InstallTrigger == 'undefined') {
+            $("#my_video_1")[0].setAttribute("allow", "autoplay; fullscreen");
             //console.log("[Kiss] Stupid chrome detected");
             setTimeout(function () {
-                $("#divContentVideo > iframe")[0].src += '';
+                $("#my_video_1")[0].src += '';
             }, 1000); /* autoplay delay in chrome. */
         }
 
