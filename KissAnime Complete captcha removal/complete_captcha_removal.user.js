@@ -2,7 +2,7 @@
 // @name         [KissAnime] Complete captcha removal
 // @namespace    https://github.com/eskander
 // @version      0.3.1
-// @description  Always use Rapidvideo and never encounter captchas again.
+// @description  Always use HydraX and never encounter captchas again.
 // @author       eskander
 // @license      MIT
 // @match        *://kissanime.ru/*
@@ -23,18 +23,17 @@
     for (var i = 0; i < link.length; i++) {
         var current = link[i].href;
         if (current.includes("Anime") && current.includes("?id=") && !(current.includes("&s="))) {
-            link[i].href+="&s=rapidvideo";
+            link[i].href+="&s=hydrax";
         }
     }
     if (document.getElementById("selectEpisode") !== null) {
         var option = document.getElementById("selectEpisode").getElementsByTagName("option");
         for (var j = 0; j < option.length; j++) {
-            option[j].value+="&s=rapidvideo";
+            option[j].value+="&s=hydrax";
         }
     }
     //Just in case..
-    if (/SKIP THIS \(RapidVideo\)/i.test(document.body.innerHTML)){
-        document.querySelector('form#formVerify .specialButton').click();
-        document.getElementById("formVerify").style.visibility = "hidden";
+    if (/SKIP THIS \(HydraX\)/i.test(document.body.innerHTML)){
+        document.getElementsByClassName('specialButton')[0].click();
     }
 })();
