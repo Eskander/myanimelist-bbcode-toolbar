@@ -1,5 +1,5 @@
 # Complete captcha removal
-After installing this script you'll probably forget about captchas in Kissanime for good, because it jumps directly to the video  without passing by the captcha's page. The only catch is that you'll be using Rapidvideo server as long as this script is activated. (In case you choose a different server you'll have to manually answer the captcha)
+After installing this script you'll probably forget about captchas in Kissanime for good, because it jumps directly to the video  without passing by the captcha's page. The only catch is that you'll be using HydraX server as long as this script is activated. (In case you choose a different server you'll have to manually answer the captcha)
 
 Check [my other scripts][1], like the one that [autoplays][2] the next episode (good for binge watchers).
 
