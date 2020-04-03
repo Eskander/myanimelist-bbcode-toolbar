@@ -1,7 +1,7 @@
 // ==UserScript==
-// @name         [KissAnime] Complete captcha removal
+// @name         [KissAnime] Complete captcha removal (Discontinued)
 // @namespace    https://github.com/eskander
-// @version      0.4
+// @version      null
 // @description  Always use HydraX and never encounter captchas again.
 // @author       eskander
 // @license      MIT
