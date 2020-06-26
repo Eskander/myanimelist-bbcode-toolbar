@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         [MyAnimeList] BBCode Toolbar
 // @namespace    https://github.com/eskander
-// @version      2020-06-22
+// @version      2020-06-26
 // @description  Advanced BBCode Editor for MyAnimeList.net
 // @author       eskander
 // @license      MIT
@@ -51,14 +51,31 @@
 /*             Continuation:         https://greasyfork.org/en/scripts/5709-bbcodes-for-mal       */
 /**************************************************************************************************/
 
-// import font-awesome and apply CSS
 (function () {
+    // import font-awesome 
     var link = document.createElement('link');
     link.setAttribute('rel', 'stylesheet');
     link.setAttribute('type', 'text/css');
     link.setAttribute('href', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/fontawesome.min.css');
     document.head.appendChild(link);
 
+    // Greasemonkey compatibility
+    if (typeof GM_addStyle == "undefined") {
+        function GM_addStyle(css) {
+            var node = document.createElement("style");
+            node.type = "text/css";
+            node.appendChild(document.createTextNode(css));
+            var heads = document.getElementsByTagName("head");
+            if (heads.length > 0) {
+                heads[0].appendChild(node);
+            } else {
+                // no head yet, stick it whereever
+                document.documentElement.appendChild(node);
+            }
+        }
+    }
+
+    // toolbar style
     GM_addStyle(`
         #myBBcode {
             margin: 10px 0px 5px 0px;
@@ -406,8 +423,12 @@ function addCodeToEdits() {
     var toEdit;
     for (var i = 0; i < allEdits.snapshotLength; i++) {
         (function (ind) {
-            allEdits.snapshotItem(ind).removeEventListener("click", function () { toEdit = editTimer(); });
-            allEdits.snapshotItem(ind).addEventListener("click", function () { toEdit = editTimer(); }, true);
+            allEdits.snapshotItem(ind).removeEventListener("click", function () {
+                toEdit = editTimer();
+            });
+            allEdits.snapshotItem(ind).addEventListener("click", function () {
+                toEdit = editTimer();
+            }, true);
         })(i);
     }
     function editTimer() {
@@ -432,13 +453,12 @@ while (xpathSnap = getXpathSnap()) {
 // Generate toolbar
 function createButtons() {
     if (xpathSnap) {
-        var xpathSnapCur = xpathSnap;
 
+        var xpathSnapCur = xpathSnap;
         var div1 = document.createElement("div");
         div1.align = "Left";
         div1.id = "myBBcode";
         div1.innerHTML = " ";
-
         xpathSnap.parentNode.insertBefore(div1, xpathSnap);
 
         // set button content
@@ -448,7 +468,9 @@ function createButtons() {
             post.innerHTML = glyph;
             post.title = name[0].toUpperCase() + name.slice(1);
             post.setAttribute('class', 'fa bbcbtn');
-            post.addEventListener('click', function () { addtag(xpathSnapCur, name); }, false);
+            post.addEventListener('click', function () {
+                addtag(xpathSnapCur, name);
+            }, false);
             div1.appendChild(post);
         }
 
@@ -511,7 +533,7 @@ function createButtons() {
             document.getElementById("Size").value = postSize.value;
             addtag(xpathSnapCur, 'size');
             postSize.value = 'Size';
-            document.getElementById("Size").selectedIndex = 0;
+            this.selectedIndex = 0;
         }, false);
         div1.appendChild(postSize);
 
@@ -553,7 +575,7 @@ function createButtons() {
             document.getElementById("Colour").value = postColour.value;
             addtag(xpathSnapCur, 'colour');
             postColour.value = 'Select';
-            document.getElementById("Colour").selectedIndex = 0;
+            this.selectedIndex = 0;
         }, false);
         div1.appendChild(postColour);
 
