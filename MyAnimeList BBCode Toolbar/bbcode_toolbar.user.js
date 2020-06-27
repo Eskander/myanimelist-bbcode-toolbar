@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         [MyAnimeList] BBCode Toolbar
 // @namespace    https://github.com/eskander
-// @version      2020-06-26
+// @version      2020-06-27
 // @description  Advanced BBCode Editor for MyAnimeList.net
 // @author       eskander
 // @license      MIT
@@ -9,30 +9,30 @@
 // @include      *://myanimelist.net/forum/?topicid=*
 // @include      *://myanimelist.net/forum/?action=message&msgid=*
 // @include      *://myanimelist.net/forum/?action=message&topic_id=*
-// @include      *://myanimelist.net/mymessages.php?go=send*
-// @include      *://myanimelist.net/editprofile.php*
-// @include      *://myanimelist.net/myblog.php*
 // @include      *://myanimelist.net/forum/?action=post*
 // @include      *://myanimelist.net/forum/index.php?action=post&boardid=*
-// @include      *://myanimelist.net/clubs.php?cid=*
-// @include      *://myanimelist.net/profile/*
-// @include      *://myanimelist.net/modules.php?go=report&type=forummessage&id=*
-// @include      *://myanimelist.net/mymessages.php?toname=*
-// @include      *://myanimelist.net/comtocom.php?id1=*
-// @include      *://myanimelist.net/comments.php?id=*
-// @include      *://myanimelist.net/editlist.php?type=anime&id=*
+// @include      *://myanimelist.net/forum/index.php?topicid=*
 // @include      *://myanimelist.net/panel.php?go=editmanga&id=*
 // @include      *://myanimelist.net/panel.php?go=add&selected_series_id=*
 // @include      *://myanimelist.net/panel.php?go=addmanga&selected_manga_id=*
 // @include      *://myanimelist.net/panel.php?go=anime_series&do=add
 // @include      *://myanimelist.net/panel.php?go=mangadb&do=add
+// @include      *://myanimelist.net/mymessages.php?go=send*
+// @include      *://myanimelist.net/mymessages.php?toname=*
 // @include      *://myanimelist.net/people.php?id=*
 // @include      *://myanimelist.net/people/*
-// @include      *://myanimelist.net/myfriends.php?go=add&id=*
-// @include      *://myanimelist.net/blog.php?eid=*
-// @include      *://myanimelist.net/forum/index.php?topicid=*
 // @include      *://myanimelist.net/ownlist/anime/*
 // @include      *://myanimelist.net/ownlist/manga/*
+// @include      *://myanimelist.net/editprofile.php*
+// @include      *://myanimelist.net/myblog.php*
+// @include      *://myanimelist.net/clubs.php?cid=*
+// @include      *://myanimelist.net/profile/*
+// @include      *://myanimelist.net/modules.php?go=report&type=forummessage&id=*
+// @include      *://myanimelist.net/comtocom.php?id1=*
+// @include      *://myanimelist.net/comments.php?id=*
+// @include      *://myanimelist.net/editlist.php?type=anime&id=*
+// @include      *://myanimelist.net/myfriends.php?go=add&id=*
+// @include      *://myanimelist.net/blog.php?eid=*
 
 // @exclude      *://myanimelist.net/editprofile.php?go=stylepref&do=cssadv&id=*
 
@@ -112,6 +112,20 @@
             border-left: 2px solid white;
         }
     `);
+
+    // forum quick reply overrides
+    if (window.location.href.includes('myanimelist.net/forum/?topicid')) {
+        GM_addStyle(`
+            #myBBcode {
+                background-color: #4f74c8 !important;
+                width: 1060px !important;
+            }
+
+            .bbcbtn {
+                background-color: #4f74c8 !important;
+            }
+        `);
+    }
 })();
 
 function addtag(snap, tag) {
@@ -596,7 +610,7 @@ function createButtons() {
 
         setButton("list", "&#xf0ca;");
         setButton("list=1", "&#xf0cb;");
-        setButton("[*]", "&#xf00b;");
+        setButton("[*]", "&#xf0fe;");
 
     }
 }
