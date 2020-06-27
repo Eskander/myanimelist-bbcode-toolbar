@@ -112,6 +112,20 @@
             border-left: 2px solid white;
         }
     `);
+
+    // forum quick reply overrides
+    if (window.location.href.includes('myanimelist.net/forum/?topicid')) {
+        GM_addStyle(`
+            #myBBcode {
+                background-color: #4f74c8 !important;
+                width: 1060px !important;
+            }
+
+            .bbcbtn {
+                background-color: #4f74c8 !important;
+            }
+        `);
+    }
 })();
 
 function addtag(snap, tag) {
