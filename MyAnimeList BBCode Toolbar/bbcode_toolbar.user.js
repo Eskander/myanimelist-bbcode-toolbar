@@ -124,6 +124,10 @@
             .bbcbtn {
                 background-color: #4f74c8 !important;
             }
+
+            .bbcbtn:hover {
+                background-color: #e1e7f5 !important;
+            }
         `);
     }
 })();
