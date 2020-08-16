@@ -1,3 +1,5 @@
+**Discontinued: KissAnime was taken down by DMCA.**
+
 # Complete captcha removal (Hydrax)
 After installing this script you'll probably forget about captchas in Kissanime for good, because it jumps directly to the video  without passing by the captcha's page. The only catch is that you'll be using HydraX server as long as this script is activated. (In case you choose a different server you'll have to manually answer the captcha)
 
