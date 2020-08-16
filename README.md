@@ -13,5 +13,5 @@ Adds a shiny toolbar on top of all text areas in MyAnimeList that support BBCode
   [b3]: https://img.shields.io/badge/Install-GitHub-lightgrey.svg?longCache=true&style=for-the-badge
 
   [l1]: https://greasyfork.org/en/scripts/370335
-  [l2]: https://openuserjs.org/scripts/eskander/[MyAnimeList]_BBCode_Toolbar
-  [l3]: https://github.com/eskander/myanimelist-bbcode-toolbar/raw/master/bbcode_toolbar.user.js
+  [l2]: https://openuserjs.org/scripts/eskander/MyAnimeList_BBCode_Toolbar
+  [l3]: https://github.com/Eskander/myanimelist-bbcode-toolbar/raw/master/myanimelist_bbcode_toolbar.user.js
