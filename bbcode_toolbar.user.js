@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         [MyAnimeList] BBCode Toolbar
+// @name         MyAnimeList BBCode Toolbar
 // @namespace    https://github.com/eskander
 // @version      2020-06-27
 // @description  Advanced BBCode Editor for MyAnimeList.net
