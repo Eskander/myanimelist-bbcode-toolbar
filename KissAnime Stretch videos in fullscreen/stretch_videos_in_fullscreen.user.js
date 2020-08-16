@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         [KissAnime] Stretch videos in fullscreen
 // @namespace    https://github.com/eskander
-// @version      0.13.1
+// @version      discontinued
 // @description  Watch old anime in full screen 16:9 aspect ratio. (all servers)
 // @author       eskander
 // @license      MIT
