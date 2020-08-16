@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         [KissAnime] AutoPlay & Auto Next Episode
 // @namespace    https://github.com/eskander
-// @version      0.16.2
+// @version      discontinued
 // @description  AutoPlay & Automatically move to the next episode. (all servers)
 // @author       eskander
 // @license      MIT

@@ -1,3 +1,5 @@
+**Discontinued: KissAnime was taken down by DMCA.**
+
 # Stretch videos in fullscreen
 Watch old anime released in 4:3 aspect ratio on your 16:9 widescreen without the black areas on the video sides. This script is mostly needed when connecting your computer to the TV.
 

@@ -1,3 +1,5 @@
+**Discontinued: KissAnime was taken down by DMCA.**
+
 # AutoPlay & Auto Next Episode
 This script tries to improve your experience in Kissanime by automating simple tasks.
 You can choose (☑) to AutoPlay episodes automatically and/or move to the next episode at the end of the current one. *(Assuming you already blocked the ads covering the players.)*
