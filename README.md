@@ -1,5 +1,7 @@
 # BBCode Toolbar for MyAnimeList.net
-Adds a shiny toolbar on top of all text areas in MyAnimeList that support BBCode. (Forum, Messages, Profile comments..).
+Add a shiny toolbar on top of all text areas in MyAnimeList that support BBCode. (Forums, Messages, Profile comments..).
+
+**MyAnimeList forum thread:** [Userscript to add a BBCode Toolbar for MAL][2].
 
 ![screenshot][1]
 
@@ -7,6 +9,7 @@ Adds a shiny toolbar on top of all text areas in MyAnimeList that support BBCode
 
 
   [1]: https://github.com/eskander/myanimelist-bbcode-toolbar/raw/master/screenshot.png
+  [2]: https://myanimelist.net/forum/?topicid=1847959
 
   [b1]: https://img.shields.io/badge/Install-GreasyFork-red.svg?longCache=true&style=for-the-badge&
   [b2]: https://img.shields.io/badge/Install-OpenUserJS-blue.svg?longCache=true&style=for-the-badge
