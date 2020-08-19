@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         MyAnimeList BBCode Toolbar
 // @namespace    https://github.com/eskander
-// @version      2020-06-27
+// @version      2020-08-19
 // @description  Advanced BBCode Editor for MyAnimeList.net
 // @author       eskander
 // @license      MIT
@@ -37,11 +37,13 @@
 // @exclude      *://myanimelist.net/editprofile.php?go=stylepref&do=cssadv&id=*
 
 // @icon         https://www.google.com/s2/favicons?domain=myanimelist.net
-// @homepage     https://github.com/eskander/userscripts-collection
-// @supportURL   https://github.com/eskander/userscripts-collection/issues
+// @homepage     https://github.com/Eskander/myanimelist-bbcode-toolbar
+// @supportURL   https://github.com/Eskander/myanimelist-bbcode-toolbar/issues/new
 // @compatible   firefox Tested with Tampermonkey
 // @compatible   chrome Tested with Tampermonkey
 // @grant        GM_addStyle
+// @grant        GM_getValue
+// @grant        GM_setValue
 // ==/UserScript==
 
 /**************************************************************************************************/
@@ -50,6 +52,9 @@
 /*             Original source code: https://userscripts-mirror.org/scripts/show/142850 (mirror)  */
 /*             Continuation:         https://greasyfork.org/en/scripts/5709-bbcodes-for-mal       */
 /**************************************************************************************************/
+
+
+// ----------------- Toolbar styling ----------------- //
 
 (function () {
     // import font-awesome 
@@ -93,6 +98,7 @@
             text-align: center;
             display: inline-block;
             cursor: pointer;
+            outline:none;
         }
 
         .bbcbtn:hover {
@@ -110,6 +116,17 @@
         .divider {
             display: inline;
             border-left: 2px solid white;
+        }
+
+        .cpanel {
+            display: none;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .cfgbtn {
+            float: right;
         }
     `);
 
@@ -131,6 +148,19 @@
         `);
     }
 })();
+
+var Interactive = GM_getValue('Interactive', true);
+
+function interractivePopup(desc) {
+    if (Interactive) {
+        return prompt(desc, "");
+    }
+    else {
+        return "";
+    }
+}
+
+// ----------------- Functionality of each button ----------------- //
 
 function addtag(snap, tag) {
     var textareaNumber = getXpathSnapNumber(snap);
@@ -193,11 +223,7 @@ function addtag(snap, tag) {
             break;
 
         case "spoiler":
-            spoiler = prompt("Enter spoiler name (or leave blank)", "");
-
-            if (spoiler == null) {
-                break;
-            }
+            spoiler = interractivePopup("Enter spoiler name (or leave blank)");
 
             if (spoiler) {
                 spoiler = '="' + spoiler + '"';
@@ -210,11 +236,7 @@ function addtag(snap, tag) {
             break;
 
         case "url":
-            urlOrDesc = prompt("Enter URL or URL description", "");
-
-            if (urlOrDesc == null) {
-                break;
-            }
+            urlOrDesc = interractivePopup("Enter URL or URL description");
 
             if (!urlOrDesc) {
                 urlOrDesc = selectedText;
@@ -233,17 +255,14 @@ function addtag(snap, tag) {
             break;
 
         case "image":
-            imgURL = prompt("Enter image URL", "");
-
-            if (imgURL == null) {
-                break;
-            }
+            imgValue = document.getElementById("Image").value;
+            imgURL = interractivePopup("Enter image URL");
 
             if (imgURL) {
                 selectedText = imgURL;
             }
 
-            tagOpen = "[img]";
+            tagOpen = "[img" + String(imgValue) + "]";
             tagClose = "[/img]";
 
             newText = beforeText + tagOpen + selectedText + tagClose + afterText;
@@ -253,13 +272,9 @@ function addtag(snap, tag) {
             txtSize = document.getElementById("Size");
 
             if (txtSize.value == "enter") {
-                txtSizeName = prompt("Enter the size (1 is minimum, 100 is default)", "");
+                txtSizeName = interractivePopup("Enter the size (1 is minimum, 100 is default)");
             } else {
                 txtSizeName = txtSize.value;
-            }
-
-            if (txtSizeName == null) {
-                break;
             }
 
             tagOpen = "[size=" + String(txtSizeName) + "]";
@@ -269,16 +284,14 @@ function addtag(snap, tag) {
             break;
 
         case "youtube":
-            yt = prompt("Enter complete youtube url", "");
+            yt = interractivePopup("Enter complete Youtube url");
 
-            if (yt == null) {
-                break;
+            if (yt.includes("youtube.com")) {
+                yt = yt.replace("https://", "http://");
+                yt = yt.replace("http://www.youtube.com/watch?v=", "http://youtube.com/watch?v=");
+                yt = yt.replace("http://youtube.com/watch?v=", "");
+                yt = yt.substring(0, 11);
             }
-
-            yt = yt.replace("https://", "http://");
-            yt = yt.replace("http://www.youtube.com/watch?v=", "http://youtube.com/watch?v=");
-            yt = yt.replace("http://youtube.com/watch?v=", "");
-            yt = yt.substring(0, 11);
 
             tagOpen = "[yt]";
             tagClose = "[/yt]";
@@ -290,13 +303,9 @@ function addtag(snap, tag) {
             colour = document.getElementById("Colour");
 
             if (colour.value == "enter") {
-                colourName = prompt("Enter the colour name or hex value (e.g. #abc123)", "");
+                colourName = interractivePopup("Enter the colour name or hex value (e.g. #abc123)");
             } else {
                 colourName = colour.value;
-            }
-
-            if (colourName == null) {
-                break;
             }
 
             tagOpen = "[color=" + String(colourName) + "]";
@@ -306,11 +315,7 @@ function addtag(snap, tag) {
             break;
 
         case "quote":
-            quote = prompt("Enter quoted person name", "");
-
-            if (quote == null) {
-                break;
-            }
+            quote = interractivePopup("Enter quoted person name");
 
             if (quote) {
                 quote = "=" + quote;
@@ -357,6 +362,8 @@ function addtag(snap, tag) {
     }
     obj.focus();
 }
+
+// ----------------- Some preliminary magic ----------------- //
 
 function xpath(query, object) {
     if (!object) var object = document;
@@ -466,9 +473,8 @@ while (xpathSnap = getXpathSnap()) {
     createButtons();
 }
 
+// ----------------- Generate toolbar ----------------- //
 
-
-// Generate toolbar
 function createButtons() {
     if (xpathSnap) {
 
@@ -506,14 +512,21 @@ function createButtons() {
             postColour.appendChild(opt);
         }
 
+        function setImage(imgText, imgVal) {
+            var opt = document.createElement("option");
+            opt.value = imgVal;
+            opt.appendChild(document.createTextNode(imgText));
+            postImage.appendChild(opt);
+        }
+
         function setDivider() {
             var opt = document.createElement("div");
             opt.setAttribute('class', 'divider');
             div1.appendChild(opt);
         }
 
+        // ----------------- Toolbar layout ----------------- //
 
-        // List layout
         setButton("bold", "&#xf032;");
         setButton("italic", "&#xf033;");
         setButton("strike", "&#xf0cc;");
@@ -606,8 +619,37 @@ function createButtons() {
 
         setButton("url", "&#xf0c1;");
         setButton("spoiler", "&#xf06a;");
-        setButton("image", "&#xf03e;");
+
+        // Image selector
+        var postImage = document.createElement("select");
+        postImage.id = "Image";
+        postImage.title = "Image";
+        postImage.setAttribute('class', 'fa bbcbtn hidearrow');
+
+        // First image selector
+        var opt = document.createElement("option");
+        opt.value = "";
+        opt.setAttribute('selected', '');
+        opt.setAttribute('disabled', '');
+        opt.setAttribute('hidden', '');
+        opt.appendChild(document.createTextNode(""));
+        postImage.appendChild(opt);
+
+        // Predefined image alignments
+        setImage("Image", "");
+        setImage("Image right", " align=right");
+        setImage("Image left", " align=left");
+
+        postImage.addEventListener('change', function () {
+            document.getElementById("Image").value = postImage.value;
+            addtag(xpathSnapCur, 'image');
+            postImage.value = 'Select';
+            this.selectedIndex = 0;
+        }, false);
+        div1.appendChild(postImage);
+
         setButton("youtube", "&#xf167;");
+        setButton("code", "&#xf121;");
         setButton("quote", "&#xf10d;");
 
         setDivider();
@@ -615,6 +657,49 @@ function createButtons() {
         setButton("list", "&#xf0ca;");
         setButton("list=1", "&#xf0cb;");
         setButton("[*]", "&#xf0fe;");
+
+        // ----------------- Settings panel ----------------- //
+
+        // Create settings button
+        var post = document.createElement("button");
+        post.type = "button";
+        post.innerHTML = "&#xf013;";
+        post.title = "Show/Hide settings";
+        post.setAttribute('class', 'fa bbcbtn cfgbtn');
+        post.addEventListener('click', function () {
+            if (document.getElementById("cpanel").style.display == "block") {
+                document.getElementById("cpanel").style.display = "none";
+            } else {
+                document.getElementById("cpanel").style.display = "block"
+            }
+        }, false);
+        div1.appendChild(post);
+
+        // Popups checkbox logic
+        var InteractiveBoxState = '';
+
+        if (Interactive) {
+            InteractiveBoxState = 'checked';
+        } else {
+            InteractiveBoxState = '';
+        }
+
+        var opt = document.createElement("div");
+        opt.setAttribute('class', 'cpanel');
+        opt.id = "cpanel";
+        opt.innerHTML = '<input type="checkbox" id="IntBox" ' + InteractiveBoxState + '><label for="IntBox" title="Show dedicated pop-ups for certain buttons.">Enable pop-ups.</label>';
+        div1.appendChild(opt);
+
+        // Remember setting across sessions
+        document.getElementById("IntBox").addEventListener('change', function () {
+            if (document.getElementById("IntBox").checked == true) {
+                Interactive = true;
+                GM_setValue('Interactive', true);
+            } else {
+                Interactive = false;
+                GM_setValue('Interactive', false);
+            }
+        }, false);
 
     }
 }
