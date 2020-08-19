@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         MyAnimeList BBCode Toolbar
 // @namespace    https://github.com/eskander
-// @version      2020-08-19
+// @version      2020-08-19-1
 // @description  Advanced BBCode Editor for MyAnimeList.net
 // @author       eskander
 // @license      MIT
@@ -668,9 +668,13 @@ function createButtons() {
         post.setAttribute('class', 'fa bbcbtn cfgbtn');
         post.addEventListener('click', function () {
             if (document.getElementById("cpanel").style.display == "block") {
-                document.getElementById("cpanel").style.display = "none";
+                for (i=0; i < document.getElementsByClassName("cpanel").length; i++){
+                    document.getElementsByClassName("cpanel")[i].style.display = "none"
+                  }
             } else {
-                document.getElementById("cpanel").style.display = "block"
+                for (i=0; i < document.getElementsByClassName("cpanel").length; i++){
+                    document.getElementsByClassName("cpanel")[i].style.display = "block"
+                  }
             }
         }, false);
         div1.appendChild(post);
