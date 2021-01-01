@@ -135,7 +135,7 @@
         GM_addStyle(`
             #myBBcode {
                 background-color: #4f74c8 !important;
-                width: 1060px !important;
+                min-width: 750px !important;
             }
 
             .bbcbtn {
