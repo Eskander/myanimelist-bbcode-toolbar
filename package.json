@@ -1,0 +1,24 @@
+{
+  "name": "myanimelist-bbcode-toolbar",
+  "version": "1.0.0",
+  "description": "Add a shiny toolbar on top of all text areas in MyAnimeList that support BBCode.",
+  "main": "myanimelist_bbcode_toolbar.user.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Eskander/myanimelist-bbcode-toolbar.git"
+  },
+  "author": "Eskander",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Eskander/myanimelist-bbcode-toolbar/issues"
+  },
+  "homepage": "https://github.com/Eskander/myanimelist-bbcode-toolbar#readme",
+  "devDependencies": {
+    "eslint": "^7.20.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1"
+  }
+}
