@@ -8,7 +8,7 @@ Add a shiny toolbar on top of all text areas in MyAnimeList that support BBCode.
 # [![GreasyFork][b1]][l1] [![OpenUserJS][b2]][l2] [![GitHub][b3]][l3]
 
 
-  [1]: https://github.com/eskander/myanimelist-bbcode-toolbar/raw/master/screenshot.png
+  [1]: https://github.com/eskander/myanimelist-bbcode-toolbar/raw/main/screenshot.png
   [2]: https://myanimelist.net/forum/?topicid=1847959
 
   [b1]: https://img.shields.io/badge/Install-GreasyFork-red.svg?longCache=true&style=for-the-badge&
