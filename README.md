@@ -17,4 +17,4 @@ Add a shiny toolbar on top of all text areas in MyAnimeList that support BBCode.
 
   [l1]: https://greasyfork.org/en/scripts/370335
   [l2]: https://openuserjs.org/scripts/eskander/MyAnimeList_BBCode_Toolbar
-  [l3]: https://github.com/Eskander/myanimelist-bbcode-toolbar/raw/master/myanimelist_bbcode_toolbar.user.js
+  [l3]: https://github.com/Eskander/myanimelist-bbcode-toolbar/raw/main/myanimelist_bbcode_toolbar.user.js
