@@ -95,6 +95,7 @@
             color: #fff;
             width: 40px;
             height: 40px;
+            font-family: 'FontAwesome';
             text-align: center;
             display: inline-block;
             cursor: pointer;
