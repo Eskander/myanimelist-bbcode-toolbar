@@ -649,7 +649,7 @@ function createButtons() {
         }, false);
         div1.appendChild(postImage);
 
-        setButton("youtube", "&#xf167;");
+        setButton("youtube", "&#xf03d;");
         setButton("code", "&#xf121;");
         setButton("quote", "&#xf10d;");
 
