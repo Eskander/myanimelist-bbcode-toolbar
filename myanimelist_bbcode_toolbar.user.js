@@ -39,8 +39,8 @@
 // @icon         https://www.google.com/s2/favicons?domain=myanimelist.net
 // @homepage     https://github.com/Eskander/myanimelist-bbcode-toolbar
 // @supportURL   https://github.com/Eskander/myanimelist-bbcode-toolbar/issues/new
-// @compatible   firefox Tested with Tampermonkey
-// @compatible   chrome Tested with Tampermonkey
+// @compatible   firefox
+// @compatible   chrome
 // @grant        GM_addStyle
 // @grant        GM_getValue
 // @grant        GM_setValue
