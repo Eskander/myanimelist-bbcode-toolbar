@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         MyAnimeList BBCode Toolbar
 // @namespace    https://github.com/eskander
-// @version      2021-11-20.1
+// @version      2022-01-18
 // @description  Advanced BBCode Editor for MyAnimeList.net
 // @author       eskander
 // @license      MIT
