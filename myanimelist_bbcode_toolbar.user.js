@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         MyAnimeList BBCode Toolbar
 // @namespace    https://github.com/eskander
-// @version      2021-11-20.1
+// @version      2022-01-18
 // @description  Advanced BBCode Editor for MyAnimeList.net
 // @author       eskander
 // @license      MIT
@@ -36,7 +36,7 @@
 
 // @exclude      *://myanimelist.net/editprofile.php?go=stylepref&do=cssadv&id=*
 
-// @icon         https://www.google.com/s2/favicons?domain=myanimelist.net
+// @icon         https://cdn.myanimelist.net/images/favicon.ico
 // @homepage     https://github.com/Eskander/myanimelist-bbcode-toolbar
 // @supportURL   https://github.com/Eskander/myanimelist-bbcode-toolbar/issues/new
 // @compatible   firefox
