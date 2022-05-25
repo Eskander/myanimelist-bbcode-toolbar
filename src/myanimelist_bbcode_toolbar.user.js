@@ -26,6 +26,7 @@
 // @include      https://myanimelist.net/editprofile.php*
 // @include      https://myanimelist.net/myblog.php*
 // @include      https://myanimelist.net/clubs.php?cid=*
+// @include      https://myanimelist.net/editclub.php?cid=*
 // @include      https://myanimelist.net/profile/*
 // @include      https://myanimelist.net/modules.php?go=report&type=forummessage&id=*
 // @include      https://myanimelist.net/comtocom.php?id1=*
