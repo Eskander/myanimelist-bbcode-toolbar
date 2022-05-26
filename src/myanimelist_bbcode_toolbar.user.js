@@ -36,6 +36,7 @@
 // @include      https://myanimelist.net/blog.php?eid=*
 
 // @exclude      https://myanimelist.net/editprofile.php?go=stylepref&do=cssadv&id=*
+// @exclude      https://myanimelist.net/profile/*/*
 
 // @icon         https://cdn.myanimelist.net/images/favicon.ico
 // @homepage     https://github.com/Eskander/myanimelist-bbcode-toolbar
